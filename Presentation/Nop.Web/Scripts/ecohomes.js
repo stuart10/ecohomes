@@ -1,6 +1,7 @@
 ﻿    var $bar=$('.top-nav-bar');
     var $navBar=$('.top-nav');
     var $barItem=$bar.find('.top-nav-item');
+    var $topNavItemLink = $barItem.find('.top-nav-item-link');
     var $last='outside';
     var $overlay=$('.nav-overlay');
     var $closeMenu=$('.close-nav');
@@ -10,7 +11,11 @@
 		
     $barItem.mouseenter(function(){
         clearDelay();
-        var $menu=$(this).find('.top-nav-menu');
+
+        $topNavItemLink = $(this).find('.top-nav-item-link');
+        $topNavItemLink.css('color', '#4c3d2c');
+
+        var $menu = $(this).find('.top-nav-menu');
 			
         if($last=='outside'){
             showMenu($menu,true);
@@ -20,7 +25,10 @@
 			
         $last='inside';})
 
-        .mouseleave(function(){
+        .mouseleave(function () {
+            $topNavItemLink = $(this).find('.top-nav-item-link');
+            $topNavItemLink.css('color', '#fff');
+
             var $menu=$(this).find('.top-nav-menu');
             hideMenu($menu);
         });
@@ -32,13 +40,14 @@
         $navBar.removeClass('top-nav-gray');
         $barItem.addClass('border');
         $barItem.last().addClass('right-border');
+        $topNavItemLink.css('color', '#fff');
     });
 
     function isTouchDevice(){
         return'ontouchstart'in document.documentElement;
     }
 			
-    function showMenu($menu,$delay){
+    function showMenu($menu, $delay) {
         if($delay){
             delay=setTimeout(function(){
                 $menu.show();
@@ -53,7 +62,7 @@
                         $('.top-nav-menu').hide();
                         $closeMenu.hide();
                     });
-                }},500);
+                }},50);
         }else{
             $overlay.show();
             $navBar.addClass('top-nav-gray');

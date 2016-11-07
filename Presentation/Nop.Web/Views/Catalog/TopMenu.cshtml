@@ -3,7 +3,7 @@
 
 @helper RenderCategoryLine(CategorySimpleModel category, int level, bool responsiveMobileMenu)
 {
-    <li>
+    <li class="top-nav-item">
         <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })">@category.Name
         @if (category.NumberOfProducts.HasValue)
         {
@@ -25,19 +25,21 @@
             }
             if (subCategories.Count > 0)
             {
-                <div class="sublist-toggle"></div>
-                <ul class="sublist @levelClass">
-                    @foreach (var subCategory in subCategories)
-                    {
-                        @RenderCategoryLine(subCategory, level + 1, responsiveMobileMenu)
-                    }
-                </ul>
+                <div class="top-nav-menu">
+      @*              <div class="sublist-toggle"></div>*@
+                    <ul class="sublist @levelClass">
+                        @foreach (var subCategory in subCategories)
+                        {
+                            @RenderCategoryLine(subCategory, level + 1, responsiveMobileMenu)
+                        }
+                    </ul>
+                </div>
             }
         }
     </li>
 }
 
-<ul class="top-menu">
+<ul class="top-nav-bar">
     @Html.Widget("header_menu_before")
     @{
         var rootCategories = Model.Categories.Where(x => x.IncludeInTopMenu).ToList();

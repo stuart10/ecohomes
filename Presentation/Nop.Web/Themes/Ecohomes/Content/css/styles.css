@@ -7010,7 +7010,7 @@ iframe, object, embed{max-width: 100%;}
     background-position-x: 81px;
     position: absolute;
     width: 140px;
-    bottom: 20px;
+    bottom: 15px;
     right: 10px;
     margin-right: 10px;
     padding-left: 14px;
@@ -7069,8 +7069,10 @@ input[type="button"].green-button, a.green-button {
 .top-nav-wrap {
   background-color: #4c3d2c;
   font-family: Verdana, Tahoma, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   padding: 5px 0;
+  width: 1200px;
+  margin: 0 auto 30px;
 }
 
 .top-nav {
@@ -7079,11 +7081,12 @@ input[type="button"].green-button, a.green-button {
   text-align: center;
   position: relative;
   display: block;
-  max-width: 1260px;
-  min-width: 980px;
+  /* max-width: 1260px; */
+  /* min-width: 980px; */
   margin: 0 auto;
   z-index: 1000;
   height: 40px;
+  width: 1200px;
 }
 .top-nav.top-nav-underline {
   border-bottom: 1.2px solid #E0DED9;
@@ -7112,22 +7115,27 @@ input[type="button"].green-button, a.green-button {
 }
 
 .top-nav-bar {
-  padding: 0 160px;
+  padding: 5px 0;
 }
 
 .top-nav-item {
   float: left;
-  width: 24%;
+  width: 25%;
   list-style: none;
   padding-bottom: 0;
 }
 .top-nav-item .top-nav-item-link {
   display: block;
-  line-height: 40px;
-  font-size: 14px;
+  /* line-height: 40px; */
+  font-size: 16px;
+  padding: 5px 55px;
+  line-height: 20px;
+  color: #fff;
 }
+
 .top-nav-item:hover {
   background-color: white;
+  
 }
 .top-nav-item:hover a {
   text-decoration: none;
