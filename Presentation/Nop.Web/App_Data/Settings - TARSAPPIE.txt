@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Source=TARSAPPIE\EXELCORE;Integrated Security=False;User ID=sa;Password=5N8bjkly8#;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False

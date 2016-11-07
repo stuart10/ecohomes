@@ -1,0 +1,526 @@
+﻿@{
+    Layout = "~/Views/Shared/_Root.Head.cshtml";
+}
+@Html.Widget("body_start_html_tag_after")
+@Html.Partial("_Notifications")
+@Html.Action("JavaScriptDisabledWarning", "Common")
+@Html.Partial("OldInternetExplorerWarning")
+
+<div class="master-wrapper-page">
+    @Html.Action("AdminHeaderLinks", "Common")
+    @Html.Partial("Header")
+    <script type="text/javascript">
+        AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+    </script>
+
+    <div class="top-nav-wrap">
+        <div class="top-nav">
+            <div class="close-nav">
+                <a href='#'>X</a>
+            </div>
+
+            <ul class="top-nav-bar">
+                <li class="top-nav-item">
+                    <a class="top-nav-item-link">Shop by Room</a>
+                    <div class="top-nav-menu">
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/category/bedroom-furniture/" class="heading">Bedroom</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/beds/">Beds</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/mattresses/">Mattresses</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/bedside-tables/">Bedside Tables</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/wardrobes/">Wardrobes</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/chest-of-drawers/">Chest of Drawers</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dressing-tables/">Dressing Tables</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/blanket-boxes/">Blanket Boxes</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/mirrors/">Mirrors</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/lamps/">Lamps</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/clocks/">Clocks</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/category/dining-room-furniture/" class="heading">Dining Room</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dining-sets/">Dining Sets</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dining-tables/">Dining Tables</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dining-chairs/">Dining Chairs</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/sideboards/">Sideboards</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dressers/">Dressers</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/display-cabinets/">Display Cabinets</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/lamp-tables/">Lamp Tables</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/mirrors/">Mirrors</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/lamps/">Lamps</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/clocks/">Clocks</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/category/living-room-furniture/" class="heading">Living Room</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/coffee-tables/">Coffee Tables</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/sofas/">Sofas</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/sideboards/">Sideboards</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/storage-cabinets/">Storage Cabinets</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/tv-cabinets/">TV Cabinets</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/display-cabinets/">Display Cabinets</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/bookcases/">Bookcases</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/console-tables/">Console Tables</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/nest-of-tables/">Nest of Tables</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/side-tables/">Side Tables</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/mirrors/">Mirrors</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/computer-desks/">Computer Desks</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/clocks/">Clocks</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/lamps/">Lamps</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/category/nursery-furniture/" class="heading">Nursery</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/cot-beds/">Cot Beds</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/nursery-chest-of-drawers/">Nursery Chest of Drawers</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/nursery-wardrobes/">Nursery Wardrobes</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/baby-changing-dresser/">Baby Changing Dresser</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/cot-bed-mattresses/">Cot Bed Mattresses</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/under-cot-bed-drawer/">Under Cot Bed Drawer</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/lamps/">Lamps</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/clocks/">Clocks</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/category/office-furniture/" class="heading">Home Office</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/computer-desks/">Computer Desks</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/bookcases/">Bookcases</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/chest-of-drawers/">Chest of Drawers</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/clocks/">Clocks</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/lamps/">Lamps</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="top-nav-item">
+                    <a class="top-nav-item-link">Shop by Product</a>
+                    <div class="top-nav-menu">
+                        <ul class='top-nav-menu-column'>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/all-categories/">
+                                    All Products
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/beds/">
+                                    Beds
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/bedside-tables/">
+                                    Bedside Tables
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/blanket-boxes/">
+                                    Blanket Boxes
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/bookcases/">
+                                    Bookcases
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/chest-of-drawers/">
+                                    Chest of Drawers
+                                </a>
+                            </li>
+                        </ul>                                            <ul class='top-nav-menu-column'>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/clocks/">
+                                    Clocks
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/coffee-tables/">
+                                    Coffee Tables
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/computer-desks/">
+                                    Computer Desks
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/console-tables/">
+                                    Console Tables
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dining-chairs/">
+                                    Dining Chairs
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dining-set-builder/">
+                                    Dining Set Builder
+                                </a>
+                            </li>
+                        </ul>                                            <ul class='top-nav-menu-column'>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dining-sets/">
+                                    Dining Sets
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dining-tables/">
+                                    Dining Tables
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/display-cabinets/">
+                                    Display Cabinets
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dressers/">
+                                    Dressers
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/dressing-tables/">
+                                    Dressing Tables
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/wood-wax-furniture-polish/">
+                                    Furniture Wax Polish
+                                </a>
+                            </li>
+                        </ul>                                            <ul class='top-nav-menu-column'>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/lamp-tables/">
+                                    Lamp Tables
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/lamps/">
+                                    Lamps
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/mattresses/">
+                                    Mattresses
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/mirrors/">
+                                    Mirrors
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/nest-of-tables/">
+                                    Nest of Tables
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/nursery/">
+                                    Nursery
+                                </a>
+                            </li>
+                        </ul>                                            <ul class='top-nav-menu-column'>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/side-tables/">
+                                    Side Tables
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/sideboards/">
+                                    Sideboards
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/sofas/">
+                                    Sofas
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/storage-cabinets/">
+                                    Storage Cabinets
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/tv-cabinets/">
+                                    TV Cabinets
+                                </a>
+                            </li>
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/wardrobes/">
+                                    Wardrobes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top-nav-item">
+                    <a class="top-nav-item-link">Shop By Range</a>
+                    <div class="top-nav-menu">
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/range/all-ranges/" class="heading">All Ranges</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/category/online-furniture/">New Ranges</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/range/rustic-oak/" class="heading">Rustic Oak</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/rustic-solid-oak/">Original Rustic</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/french-farmhouse-oak/">French Farmhouse</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/orrick-solid-oak/">Orrick</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/quercus-solid-oak/">Quercus</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/taunton-solid-oak/">Taunton</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/range/natural-oak/" class="heading">Natural Oak</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/tokyo-solid-oak/">Tokyo</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/bevel-solid-oak/">Bevel</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/alto-solid-oak/">Alto</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/galway-solid-oak/">Galway</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/fresco-solid-oak/">Fresco</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/rivermead-solid-oak/">Rivermead</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/newark-solid-oak/">Newark</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/edinburgh-solid-oak/">Edinburgh</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/oakdale-solid-oak/">Oakdale</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/cairo-solid-oak/">Cairo</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/range/painted-furniture/" class="heading">Painted Furniture</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/country-cottage-painted/">Country Cottage</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/kemble-painted-rustic/">Kemble</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/bella-cream-painted/">Bella</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/st-ives-grey-painted/">St. Ives</a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li>
+                                <a href="http://www.oakfurnitureland.co.uk/range/mango-furniture-other/" class="heading">Mango & Other</a>
+                            </li>
+
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/victoria-dark-acacia/">Victoria</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/mantis-light-mango/">Mantis Light</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/baku-light-mango/">Baku Light</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/manor-house-solid-oak/">Manor House</a>
+                            </li>
+                            <li class="top-nav-menu-item sub-cat">
+                                <a href="http://www.oakfurnitureland.co.uk/range/coastal-solid-oak/">Coastal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top-nav-item right-border">
+                    <a class="top-nav-item-link">Promotions</a>
+                    <div class="top-nav-menu">
+                        <ul class="top-nav-menu-column">
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/exclusive-promotion/">
+                                    Autumn Sale Extra Savings
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/sofa-savings/">
+                                    Free Upgrade on Devon Sofas
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/furniture-sale/">
+                                    Free Accessory Promotion
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="top-nav-menu-column">
+                            <li class="top-nav-menu-item">
+                                <a href="http://www.oakfurnitureland.co.uk/category/furniture-promotion/">
+                                    Clearance
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header-menu">
+        @Html.Action("TopMenu", "Catalog")
+    </div>
+    <div class="master-wrapper-content">
+        @Html.Widget("content_before")
+
+        @if (IsSectionDefined("Breadcrumb"))
+        {
+            @RenderSection("Breadcrumb") 
+        }
+        <div class="master-column-wrapper">
+            @RenderBody()
+        </div>
+        @Html.Widget("content_after")
+    </div>
+    @Html.Action("Footer", "Common")
+</div>
+@Html.Action("EuCookieLaw", "Common")
+@Html.Widget("body_end_html_tag_before")

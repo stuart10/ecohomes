@@ -1,0 +1,38 @@
+﻿@model ProductDetailsModel
+@using Nop.Web.Models.Catalog;
+
+<div class="ecohomes-dimensions">
+
+@if (!String.IsNullOrWhiteSpace(Model.Length.ToString()))
+{
+    <div class="ecohomes-weight">
+        <span class="label">Weight:</span>
+        <span class="value" id="ecohomes-weight-value-@Model.Id">@Model.Weight.ToString()kg</span><span class="ecohomes-dimension-separator">|</span>
+    </div>
+}
+
+@if (!String.IsNullOrWhiteSpace(Model.Length.ToString()))
+{
+    <div class="ecohomes-length">
+        <span class="label">Length:</span>
+        <span class="value" id="ecohomes-length-value-@Model.Id">@Model.Length.ToString()mm</span><span class="ecohomes-dimension-separator">|</span>
+    </div>
+}
+
+@if (!String.IsNullOrWhiteSpace(Model.Width.ToString()))
+{
+    <div class="ecohomes-width">
+        <span class="label">Width:</span>
+        <span class="value" id="ecohomes-width-value-@Model.Id">@Model.Width.ToString()mm</span><span class="ecohomes-dimension-separator">|</span>
+    </div>
+}
+
+@if (!String.IsNullOrWhiteSpace(Model.Height.ToString()))
+{
+    <div class="ecohomes-height">
+        <span class="label">Height:</span>
+        <span class="value" id="ecohomes-height-value-@Model.Id">@Model.Height.ToString()mm</span>
+    </div>
+}
+</div>
+<div style="clear: both;"></div>
