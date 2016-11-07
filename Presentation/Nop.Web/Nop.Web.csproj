@@ -1051,7 +1051,7 @@
     <Content Include="Themes\Ecohomes\theme.config" />
     <Content Include="Themes\Ecohomes\Views\Shared\Head.cshtml" />
     <Content Include="Themes\Ecohomes\Views\Web.config" />
-    <Content Include="Themes\Ecohomes\Content\css\oak-nav.css" />
+    <Content Include="Themes\Ecohomes\Content\css\oak-nav NOT USED.css" />
     <Content Include="Views\Product\_ProductDimensions.cshtml" />
   </ItemGroup>
   <ItemGroup>

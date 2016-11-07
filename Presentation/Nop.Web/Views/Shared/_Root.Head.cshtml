@@ -52,6 +52,11 @@
     <!--Powered by nopCommerce - http://www.nopCommerce.com-->
 </head>
 <body>
+
+    @*Ecohomes div - fade out when hover over menu*@
+    <div class="nav-overlay"></div> 
+
+
     @RenderBody()
     @Html.NopCssFiles(this.Url, ResourceLocation.Foot)
     @Html.NopScripts(this.Url, ResourceLocation.Foot)

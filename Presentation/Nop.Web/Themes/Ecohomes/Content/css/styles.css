@@ -710,7 +710,7 @@ label, label + * {
 	position: relative;
 	padding: 20px 0;
 }
-.header-links {float:  left;margin: 10px 0;}
+.header-links {float:  left;margin: 10px 0 8px 0;}
 
 /*.header-links ul  {
     /*Exel Wines customisation - in order for font awesome icons to display*/
@@ -7009,21 +7009,21 @@ iframe, object, embed{max-width: 100%;}
 .slider-button {
     background-position-x: 81px;
     position: absolute;
-    width: 110px;
-    bottom: 40px;
-    right: 0;
+    width: 140px;
+    bottom: 20px;
+    right: 10px;
     margin-right: 10px;
     padding-left: 14px;
 }
 
 input[type="button"].green-button, a.green-button {
-    background: #bbb908 url(/Themes/Ecohomes/Content/images/shop-now-triangle.png) no-repeat 83px;
+    background: #bbb908 url(/Themes/Ecohomes/Content/images/shop-now-triangle.png) no-repeat 108px;
     text-transform: uppercase;
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: bold;
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
+    line-height: 50px;
     display: block;
     border: none;
     cursor: grab;
@@ -7045,8 +7045,8 @@ input[type="button"].green-button, a.green-button {
         float: right;
         font-size: 16px;
         font-weight: bold;
-        margin-left: 10px;
-        margin-top: 19px;
+        margin-left: 5px;
+        margin-top: 18px;
         max-width: 265px;
         white-space: nowrap;
         margin-right: 0;
@@ -7063,3 +7063,148 @@ input[type="button"].green-button, a.green-button {
         margin: 0;
         padding: 0;
     }
+
+
+
+.top-nav-wrap {
+  background-color: #4c3d2c;
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.top-nav {
+  text-transform: uppercase;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  display: block;
+  max-width: 1260px;
+  min-width: 980px;
+  margin: 0 auto;
+  z-index: 1000;
+  height: 40px;
+}
+.top-nav.top-nav-underline {
+  border-bottom: 1.2px solid #E0DED9;
+}
+
+.top-nav-gray {
+  background-color: #4c3d2c;
+}
+
+.close-nav {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #4c3d2c;
+  z-index: 5000;
+  padding: 5px;
+  background-color: #4c3d2c;
+  line-height: 12px;
+}
+.close-nav a {
+  font-size: 12px;
+}
+
+.top-nav-bar {
+  padding: 0 160px;
+}
+
+.top-nav-item {
+  float: left;
+  width: 24%;
+  list-style: none;
+  padding-bottom: 0;
+}
+.top-nav-item .top-nav-item-link {
+  display: block;
+  line-height: 40px;
+  font-size: 14px;
+}
+.top-nav-item:hover {
+  background-color: white;
+}
+.top-nav-item:hover a {
+  text-decoration: none;
+}
+
+.top-nav-item.border {
+  border-left: solid 1px #9f9f9f;
+}
+
+.top-nav-item.right-border {
+  border-right: solid 1px #9f9f9f;
+}
+
+.top-nav-menu {
+  background-color: #fff;
+  position: absolute;
+  display: none;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  text-transform: capitalize;
+  list-style: none;
+  font-weight: normal;
+  line-height: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+.top-nav-menu .top-nav-menu-column {
+  float: left;
+  width: 16%;
+  list-style: none;
+  padding: 0 15px 10px 15px;
+}
+.top-nav-menu .top-nav-menu-column li {
+  padding: 5px 0;
+  border-bottom: dotted 1px #ccc;
+}
+.top-nav-menu .top-nav-menu-column li:hover a {
+  text-decoration: underline;
+}
+.top-nav-menu .top-nav-menu-column .heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 10%;
+}
+
+.top-nav-menu-item {
+  padding-bottom: 10px;
+}
+.top-nav-menu-item:hover a {
+  text-decoration: underline;
+}
+
+.top-nav-menu-item.sub-cat {
+  padding-bottom: 10px;
+}
+
+.sub-cat {
+  float: left;
+  width: 100%;
+  border: none;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.sub-cat:hover a {
+  text-decoration: underline;
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(110, 98, 89, 0.46);
+  z-index: 500;
+}
